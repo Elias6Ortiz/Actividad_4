@@ -9,147 +9,159 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-
     <link rel="stylesheet" href="styles/style.css" />
   </head>
+
   <body>
+    <!-- Modo oscuro: Se añade la clase 'dark-mode' dinámicamente para cambiar de tema -->
     <header>
       <h1>Tutorial de animación en Scratch</h1>
       <p>Aprende a crear tus propias animaciones con Scratch.</p>
+      <!-- Botón para alternar entre light mode y dark mode -->
+      <button id="toggle-dark-mode">Cambiar Tema</button>
     </header>
-    <section id="scratch-projects">
-      <article>
-        <h2>Proyectos de ejemplo</h2>
 
-        <div class="carousel carousel-slider center">
-          <div class="carousel-item" href="#one!">
-            <iframe
-              src="https://scratch.mit.edu/projects/1074550748/embed"
-              allowtransparency="true"
-              width="485"
-              height="402"
-              frameborder="0"
-              scrolling="no"
-              allowfullscreen
-            ></iframe>
+    <main>
+      <section id="scratch-projects">
+        <article>
+          <h2>Proyectos de ejemplo</h2>
+
+          <!-- Carrusel de proyectos -->
+          <div class="carousel carousel-slider center">
+            <div class="carousel-item" href="#one!">
+              <iframe
+                src="https://scratch.mit.edu/projects/1074550748/embed"
+                allowtransparency="true"
+                width="485"
+                height="402"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="carousel-item" href="#two!">
+              <iframe
+                src="https://scratch.mit.edu/projects/1074581193/embed"
+                allowtransparency="true"
+                width="485"
+                height="402"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="carousel-item" href="#three!">
+              <iframe
+                src="https://scratch.mit.edu/projects/1074586738/embed"
+                allowtransparency="true"
+                width="485"
+                height="402"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
-          <div class="carousel-item" href="#two!">
-            <iframe
-              src="https://scratch.mit.edu/projects/1074581193/embed"
-              allowtransparency="true"
-              width="485"
-              height="402"
-              frameborder="0"
-              scrolling="no"
-              allowfullscreen
-            ></iframe>
+
+          <p>
+            Estos son algunos ejemplos de proyectos en Scratch donde puedes
+            interactuar con un sencillo juego.
+          </p>
+
+          <!-- Sumario de secciones -->
+          <h3>Sumario</h3>
+          <ul>
+            <li><a href="#seccion1">Breve introducción a la animación</a></li>
+            <li><a href="#seccion2">Sprites</a></li>
+            <li><a href="#seccion3">Bloques de código</a></li>
+          </ul>
+
+          <!-- Sección 1: Introducción -->
+          <h3 id="seccion1">1. Breve introducción a la animación</h3>
+          <img src="assets/squash-and-stretch.png" alt="Aplastar y estirar" />
+          <p>
+            Las animaciones pueden ser un medio de comunicación poderoso y
+            atractivo cuando están bien hechas. Para crear animaciones que
+            tengan un impacto duradero en tu audiencia, debes conocer los 12
+            principios de la animación. Los 12 principios de la animación
+            orientan y ayudan a los animadores para crear movimientos fluidos y
+            realistas. Estos principios esenciales fueron resaltados por vez
+            primera por los animadores de Disney Ollie Johnston y Frank Thomas
+            en su libro, The Illusion of Life: Disney Animation en 1981. Estas
+            técnicas son esenciales tanto para la animación tradicional a mano
+            como para la moderna animación 3D por ordenador.
+          </p>
+
+          <!-- Sección 2: Sprites -->
+          <h3 id="seccion2">2. Sprites</h3>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"
+              ><img src="assets/correr16x16.png"
+            /></a>
+            <a class="carousel-item" href="#two!"
+              ><img src="assets/correr16x17.png"
+            /></a>
+            <a class="carousel-item" href="#three!"
+              ><img src="assets/correr16x18.png"
+            /></a>
+            <a class="carousel-item" href="#four!"
+              ><img src="assets/correr16x19.png"
+            /></a>
+            <a class="carousel-item" href="#five!"
+              ><img src="assets\correr16x20.png"
+            /></a>
+            <a class="carousel-item" href="#six!"
+              ><img src="assets\correr16x21.png"
+            /></a>
+            <a class="carousel-item" href="#seven!"
+              ><img src="assets\correr16x22.png"
+            /></a>
+            <a class="carousel-item" href="#eight!"
+              ><img src="assets\correr16x23.png"
+            /></a>
           </div>
-          <div class="carousel-item" href="#three!">
-            <iframe
-              src="https://scratch.mit.edu/projects/1074586738/embed"
-              allowtransparency="true"
-              width="485"
-              height="402"
-              frameborder="0"
-              scrolling="no"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
+          <p>
+            Siguiendo el ejemplo anterior, necesitaremos una serie de imagenes
+            sucesivas siguiendo el principio "Aplastar y Estirar".
+            <br />
+            Este efecto dara la sensación de movimiento natural a nuestro
+            personaje.
+          </p>
 
-        <p>
-          Estos son algunos ejemplos de proyectos en Scratch donde puedes
-          interactuar con un sencillo juego.
-        </p>
+          <img
+            src="assets/subir_objeto.PNG"
+            alt="Subir imágenes o gif animado"
+          />
 
-        <h3>Sumario</h3>
+          <p>
+            En la pestaña de Disfrases, podemos seleccionar podemos seleccionar
+            el Icono de Gato para "Escoger un Disfraz" y usar la opción de
+            "Subir Disfraz".
+            <br />
+            La ventaja sera poder usar imagenes ya guardadas previamente, o
+            subir una imagen animada gif directamente.
+          </p>
 
-        <ul>
-          <li><a href="#seccion1">Breve introduccion a la animación</a></li>
-          <li><a href="#seccion2">Sprites</a></li>
-          <li><a href="#seccion3">Bloques de código</a></li>
-        </ul>
+          <img src="assets/escalar_objeto.PNG" alt="Escalar Objeto" />
+          <p>
+            Debido a que nuestro objeto es muy pequeño, podemos escalarlo al
+            1000% para hacerlo mas legible.
+          </p>
 
-        <h3 id="seccion1">1. Breve introduccion a la animación</h3>
-        <img src="assets\squash-and-stretch.png" alt="Aplastar y estirar" />
-        <p>
-          Las animaciones pueden ser un medio de comunicación poderoso y
-          atractivo cuando están bien hechas. Para crear animaciones que tengan
-          un impacto duradero en tu audiencia, debes conocer los 12 principios
-          de la animación. Los 12 principios de la animación orientan y ayudan a
-          los animadores para crear movimientos fluidos y realistas. Estos
-          principios esenciales fueron resaltados por vez primera por los
-          animadores de Disney Ollie Johnston y Frank Thomas en su libro, The
-          Illusion of Life: Disney Animation en 1981. Estas técnicas son
-          esenciales tanto para la animación tradicional a mano como para la
-          moderna animación 3D por ordenador.
-        </p>
+          <!-- Sección 3: Bloques de código -->
+          <h3 id="seccion3">3. Bloques de código</h3>
+          <img src="assets/bloques_codigo.PNG" alt="Codigo" />
+          <p>
+            Por último le damos un comportamiento a los Sprites, donde al
+            iniciar el loop animado, podemos determinar cuanto tiempo irá
+            cambiando cada Sprite en relación al siguiente.
+          </p>
+        </article>
+      </section>
 
-        <h3 id="seccion2">2. Sprites</h3>
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"
-            ><img src="assets/correr16x16.png"
-          /></a>
-          <a class="carousel-item" href="#two!"
-            ><img src="assets/correr16x17.png"
-          /></a>
-          <a class="carousel-item" href="#three!"
-            ><img src="assets/correr16x18.png"
-          /></a>
-          <a class="carousel-item" href="#four!"
-            ><img src="assets/correr16x19.png"
-          /></a>
-          <a class="carousel-item" href="#five!"
-            ><img src="assets\correr16x20.png"
-          /></a>
-          <a class="carousel-item" href="#six!"
-            ><img src="assets\correr16x21.png"
-          /></a>
-          <a class="carousel-item" href="#seven!"
-            ><img src="assets\correr16x22.png"
-          /></a>
-          <a class="carousel-item" href="#eight!"
-            ><img src="assets\correr16x23.png"
-          /></a>
-        </div>
-        <p>
-          Siguiendo el ejemplo anterior, necesitaremos una serie de imagenes
-          sucesivas siguiendo el principio "Aplastar y Estirar".
-          <br />
-          Este efecto dara la sensación de movimiento natural a nuestro
-          personaje.
-        </p>
-
-        <img src="assets\subir_objeto.PNG" alt="Subir imagenes o gif animado" />
-
-        <p>
-          En la pestaña de Disfrases, podemos seleccionar podemos seleccionar el
-          Icono de Gato para "Escoger un Disfraz" y usar la opción de "Subir
-          Disfraz".
-          <br />
-          La ventaja sera poder usar imagenes ya guardadas previamente, o subir
-          una imagen animada gif directamente.
-        </p>
-
-        <img src="assets\escalar_objeto.PNG" alt="Escalar Objeto" />
-
-        <p>
-          Debido a que nuestro objeto es muy pequeño, podemos escalarlo al 1000%
-          para hacerlo mas legible.
-        </p>
-
-        <h3 id="seccion3">3. Bloques de código</h3>
-        <img src="assets\bloques_codigo.PNG" alt="Codigo" />
-
-        <p>
-          Por último le damos un comportamiento a los Sprites, donde al iniciar
-          el loop animado, podemos determinar cuanto tiempo irá cambiando cada
-          Sprite en relación al siguiente.
-        </p>
-      </article>
-    </section>
-
-    <button id="scrollToTop">Ir al Inicio</button>
+      <!-- Botón para subir al inicio -->
+      <button id="scrollToTop" style="display: none">Ir al Inicio</button>
+    </main>
 
     <footer>
       <p>
@@ -158,9 +170,9 @@
       </p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js\scripts.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

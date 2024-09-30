@@ -1,41 +1,14 @@
+@charset "UTF-8";
+/* Light mode - por defecto */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-header, footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 20px;
-}
-
-header h1 {
-  margin: 0;
-}
-
-section#scratch-projects {
-  margin: 20px;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-}
-
-article {
-  margin-bottom: 20px;
-}
-
-iframe {
-  max-width: 100%;
-  border: 3px solid #333;
-}
-
-footer p {
-  margin: 0;
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
 
 #scrollToTop {
@@ -50,4 +23,5 @@ footer p {
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: none; /* Por defecto está oculto */
 }/*# sourceMappingURL=style.css.map */
