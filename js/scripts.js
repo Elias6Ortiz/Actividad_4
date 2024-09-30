@@ -1,3 +1,4 @@
+/*
 // scripts.js
 document.addEventListener('DOMContentLoaded', function() {
     const iframe = document.querySelector('iframe');
@@ -7,8 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
         iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
     };
 });
+*/
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
+document.getElementById("scrollToTop").onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Para un desplazamiento suave
   });
+};
+
+$(document).ready(function () {
+  $(".carousel").carousel();
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  $(".dropdown-trigger").dropdown();
+});
