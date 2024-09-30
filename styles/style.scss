@@ -11,7 +11,8 @@ body.dark-mode {
 }
 
 /* Estilos para el header */
-.header {
+.header,
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +52,10 @@ body.dark-mode #toggle-dark-mode {
 
 body.dark-mode a {
   color: #ffcc00;
+}
+
+main {
+  padding: 2vh 3vw;
 }
 
 #scrollToTop {
