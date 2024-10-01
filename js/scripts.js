@@ -35,11 +35,12 @@ document.getElementById('toggle-dark-mode').addEventListener('click', function()
 });
 
 $(document).ready(function () {
+  $(".carousel").carousel();
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
-    indicators: true
+    indicators: true,
+    autoPlay: true,
+    duration: 200
   });
-  $(".carousel").carousel({
-    duration: 200,
-  });
+  $(".dropdown-trigger").dropdown();
 });

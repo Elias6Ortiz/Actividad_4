@@ -1,3 +1,12 @@
+/* Variables para colores */
+$primary-bg-color: #007bff;
+$primary-text-color: white;
+$dark-bg-color: #121212;
+$dark-header-footer-bg: #333;
+$dark-toggle-bg: #444;
+$hover-bg-color: #f1f1f1;
+$link-hover-color: #ffcc00;
+
 /* Light mode - por defecto */
 body {
   background-color: #ffffff;
@@ -6,58 +15,65 @@ body {
 
 /* Dark mode */
 body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
+  background-color: $dark-bg-color;
+  color: $primary-text-color;
 }
 
-/* Estilos para el header */
+/* Estilos para el header y footer */
 .header,
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+
+  /* Dark mode */
+  body.dark-mode & {
+    background-color: $dark-header-footer-bg;
+  }
 }
 
+/* Logo */
 .logo {
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Botón para cambiar tema */
 #toggle-dark-mode {
   padding: 5px 15px;
   font-size: 14px;
-  background-color: white;
-  color: #007bff;
+  background-color: $primary-text-color;
+  color: $primary-bg-color;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+
+  /* Dark mode */
+  body.dark-mode & {
+    background-color: $dark-toggle-bg;
+    color: $primary-text-color;
+  }
 }
 
-#toggle-dark-mode:hover {
-  background-color: #f1f1f1;
-}
-
-body.dark-mode .header {
-  background-color: #333;
-}
-
-body.dark-mode #toggle-dark-mode {
-  background-color: #444;
-  color: white;
-}
-
+/* Enlaces en dark mode */
 body.dark-mode a {
-  color: #ffcc00;
+  color: $link-hover-color;
 }
 
+/* Estilo para el contenido principal */
 main {
   padding: 2vh 3vw;
 }
 
+/* Botón de ir al inicio */
 #scrollToTop {
   position: fixed;
   bottom: 20px;
@@ -65,10 +81,28 @@ main {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #007bff;
-  color: white;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   display: none; /* Por defecto está oculto */
+}
+
+/* Carousel */
+ul.indicators li.indicator-item {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+ul.indicators li.indicator-item.active {
+  background-color: #000000 !important;
+}
+
+/* Sumario */
+.sumary {
+  padding-left: 2vw !important;
+
+  li {
+    list-style-type: disc !important;
+  }
 }
